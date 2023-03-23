@@ -9,7 +9,8 @@ var filter = function (pathname, req) {
   // multiple origin version:
   return (
     req.headers.origin === "http://127.0.0.1:5500" ||
-    req.headers.origin === "https://127.0.0.1:5500"
+    req.headers.origin === "https://127.0.0.1:5500" ||
+    req.headers.origin === "http://parks.punreliable.com"
   );
 };
 
