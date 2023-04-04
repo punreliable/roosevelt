@@ -14,7 +14,9 @@ var filter = function (pathname, req) {
     req.headers.origin === "https://127.0.0.1:8888" ||
     req.headers.origin === "http://127.0.0.1:80"   ||
     req.headers.origin === "https://127.0.0.1:80"   ||
-    req.headers.origin === "http://parks.punreliable.com"
+    req.headers.origin === "http://parks.punreliable.com" ||
+    req.headers.origin === "http://localhost:8888/parks/" ||
+    req.headers.origin === "https://localhost:8888/parks/"
   );
 };
 
